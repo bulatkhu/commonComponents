@@ -1,0 +1,33 @@
+.canvasCircle {
+
+  &__wrapper {
+    border-radius: 50%;
+    padding-bottom: 100%;
+    width : 300px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    background: #fff;
+  }
+
+  &__circle {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+  }
+}
+
+.canvasCircle__rating {
+  position: absolute;
+  color: #27AE60;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;font-style: normal;
+}
