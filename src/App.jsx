@@ -1,11 +1,15 @@
 import React, {useRef} from 'react'
 import './App.css'
 import Selector from './components/selector'
-import Counter from './components/Couter'
 import FlipPage from 'react-flip-page'
-import FlipBookComponent from './components/FlipBook/FlipBook'
+// import FlipBookComponent from './components/FlipBook/FlipBook'
 import RatingCircle from './components/RatingCircle/RatingCircle'
 import CanvasCircle from './components/CanvasCircle/CanvasCircle'
+import CounterWrapper from './components/CounterWrapper/CounterWrapper'
+import OutputCounter from './components/OutputCounter/OutputCounter'
+import Counter from './components/Counter/Counter'
+import UsersComp from './components/Users/UsersComp'
+import Auth from './components/Auth/Auth'
 
 
 function App() {
@@ -41,6 +45,41 @@ function App() {
   return (
     <div className="App">
 
+
+      <div className="App-workplace light-bg" style={{
+        justifyContent: 'center',
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column'
+      }}>
+
+        <Auth/>
+
+      </div>
+
+
+      <div className="App-workplace light-bg" style={{
+        justifyContent: 'center',
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column'
+      }}>
+
+        <UsersComp/>
+
+      </div>
+
+      <div className="App-workplace light-bg" style={{
+        justifyContent: 'center',
+        display: 'flex',
+        alignItems: 'center'
+      }}>
+        <CounterWrapper>
+          <OutputCounter/>
+          <Counter/>
+        </CounterWrapper>
+      </div>
+
       <div className="App-workplace light-bg" style={{
         justifyContent: 'center',
         display: 'flex',
@@ -67,7 +106,7 @@ function App() {
         <div className="HTML-flipBook__overplay">
           {/*<div className="HTML-flipBook p-50-10 d-flex-center d-flex-dir-column">*/}
 
-            <FlipBookComponent/>
+            {/*<FlipBookComponent/>*/}
 
           {/*</div>*/}
         </div>
@@ -120,7 +159,6 @@ function App() {
         {/*<VimeoVideo/>*/}
       </div>
 
-      <Counter/>
 
     </div>
   );

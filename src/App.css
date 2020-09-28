@@ -4,6 +4,11 @@ html, body {
 
 .App {
   text-align: center;
+  overflow: hidden;
+
+}
+
+.App__wrapper {
 }
 
 .App-logo {
