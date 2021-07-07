@@ -1,0 +1,136 @@
+.HTML-flipBook {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100%;
+  position: relative;
+  max-width: 710px;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.HTML-flipBook__controls {
+  margin-top: 25px;
+  background: #FFFFFF;
+  padding: 7px 15px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 32px;
+}
+
+.HTML-flipBook__controls div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.HTML-flipBook__wrapper {
+  margin: 0 10px;
+  display: block;
+  width: 100%;
+  padding: 42px 0;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  max-height: 360px;
+  overflow: hidden;
+}
+
+.HTML-control {
+  display: inline-block;
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+}
+
+.HTML-control:not(:last-child) {
+  margin-right: 10px;
+}
+
+.HTML-control__toFirst {
+  background: url("../../images/arrow.svg") 20% center no-repeat, url("../../images/arrow.svg") 70% center no-repeat;
+}
+
+.HTML-control__toLast {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background: url("../../images/arrow.svg") 20% center no-repeat, url("../../images/arrow.svg") 70% center no-repeat;
+}
+
+.HTML-control__prev {
+  background: url("../../images/arrow.svg") center no-repeat;
+}
+
+.HTML-control__next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background: url("../../images/arrow.svg") center no-repeat;
+}
+
+.HTML-control__counter {
+  font-size: 14px;
+  line-height: 16px;
+  margin-right: 10px;
+  color: #FF5773;
+}
+
+.stf__parent {
+  background: #fff;
+  margin: auto;
+  max-height: inherit;
+}
+
+.demoPage {
+  text-align: left;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #626267;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.demoPage:nth-child(2n+1) {
+  padding: 0 27px 0 0;
+}
+
+.demoPage:nth-child(2n) {
+  padding: 0 0 0 27px;
+}
+
+@media (max-width: 700px) {
+  .HTML-flipBook__wrapper {
+    padding: 12px 14px;
+  }
+  .demoPage:nth-child(2n+1) {
+    padding: 0 5px 0 0;
+  }
+  .demoPage:nth-child(2n) {
+    padding: 0 0 0 5px;
+  }
+  .stf__parent::before {
+    content: none;
+  }
+}
+/*# sourceMappingURL=FlipBook.css.map */

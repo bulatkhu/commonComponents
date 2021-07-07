@@ -6,6 +6,9 @@ import FlipPage from 'react-flip-page'
 import FlipBookComponent from './components/FlipBook/FlipBook'
 import RatingCircle from './components/RatingCircle/RatingCircle'
 import CanvasCircle from './components/CanvasCircle/CanvasCircle'
+import DemoApp from "./components/Fullcalendar/Fullcalendar";
+import UploadFile from "./components/UploadFile/UploadFile";
+import Sumsub from './components/Sumsub/Sumsub'
 
 
 function App() {
@@ -40,6 +43,19 @@ function App() {
 
   return (
     <div className="App">
+
+      <div className="App-workplace light-bg">
+        <Sumsub/>
+      </div>
+
+      <div className="App-workplace light-bg">
+        <UploadFile/>
+      </div>
+
+
+      <div className="App-workplace light-bg">
+        <DemoApp/>
+      </div>
 
       <div className="App-workplace light-bg" style={{
         justifyContent: 'center',

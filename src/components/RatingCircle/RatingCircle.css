@@ -1,0 +1,125 @@
+.ratingCircle {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ratingCircle__circle {
+  margin: 25px 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 45px solid transparent;
+  background-size: 100% 100%, 100% 50%, 100% 100%, 100% 100%, 100% 30%;
+  background-repeat: no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(white)), -webkit-gradient(linear, left bottom, left top, color-stop(100%, blue), to(lightgrey)), -webkit-gradient(linear, left bottom, left top, color-stop(100%, red), to(lightgrey)), -webkit-gradient(linear, left bottom, left top, color-stop(100%, yellow), to(lightgrey));
+  background-image: linear-gradient(white, white), linear-gradient(360deg, blue 100%, lightgrey 100%), linear-gradient(360deg, red 100%, lightgrey 100%), linear-gradient(360deg, yellow 100%, lightgrey 100%);
+  background-position: center center, left top, right top, left bottom, right bottom, right top;
+  background-origin: content-box, border-box, border-box, border-box, border-box, border-box;
+  background-clip: content-box, border-box, border-box, border-box, border-box, border-box;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.ratingCircle__secondCircle {
+  border-radius: 50px;
+  border-right-color: red;
+  border-top-color: yellow;
+  border-bottom-color: red;
+  border-left-color: green;
+  border-width: 50px;
+  border-style: solid;
+  height: 0px;
+  width: 0px;
+  position: relative;
+  /* To ratate */
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.ratingCircle__secondCircle::before {
+  display: block;
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: -50px;
+  border-radius: 50px;
+  border-right-color: transparent;
+  border-top-color: yellow;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-width: 50px;
+  border-style: solid;
+  height: 0;
+  width: 0;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.ratingCircle__secondCircle::after {
+  display: block;
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: -50px;
+  border-radius: 50px;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: green;
+  border-width: 50px;
+  border-style: solid;
+  height: 0px;
+  width: 0px;
+  /* To ratate */
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+.quarterItem__wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.quarterItem__item {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  -webkit-transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.quarterItem__1 {
+  top: 0;
+  left: 0;
+  background-color: #FF4141;
+}
+
+.quarterItem__2 {
+  top: 0;
+  right: 0;
+  background-color: blue;
+}
+
+.quarterItem__3 {
+  bottom: 0;
+  left: 0;
+  background-color: #FFC000;
+}
+
+.quarterItem__4 {
+  bottom: 0;
+  right: 0;
+  background-color: #27AE60;
+}
+/*# sourceMappingURL=RatingCircle.css.map */
