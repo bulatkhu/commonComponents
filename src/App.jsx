@@ -1,14 +1,21 @@
 import React, {useRef} from 'react'
 import './App.css'
 import Selector from './components/selector'
-import Counter from './components/Couter'
 import FlipPage from 'react-flip-page'
-import FlipBookComponent from './components/FlipBook/FlipBook'
+// import FlipBookComponent from './components/FlipBook/FlipBook'
 import RatingCircle from './components/RatingCircle/RatingCircle'
 import CanvasCircle from './components/CanvasCircle/CanvasCircle'
+<<<<<<< HEAD
 import DemoApp from "./components/Fullcalendar/Fullcalendar";
 import UploadFile from "./components/UploadFile/UploadFile";
 import Sumsub from './components/Sumsub/Sumsub'
+=======
+import CounterWrapper from './components/CounterWrapper/CounterWrapper'
+import OutputCounter from './components/OutputCounter/OutputCounter'
+import Counter from './components/Counter/Counter'
+import UsersComp from './components/Users/UsersComp'
+import Auth from './components/Auth/Auth'
+>>>>>>> a5bede62456b4e0efdfbcc7ed65ebbaeccdb3d82
 
 
 function App() {
@@ -44,6 +51,7 @@ function App() {
   return (
     <div className="App">
 
+<<<<<<< HEAD
       <div className="App-workplace light-bg">
         <Sumsub/>
       </div>
@@ -55,6 +63,41 @@ function App() {
 
       <div className="App-workplace light-bg">
         <DemoApp/>
+=======
+
+      <div className="App-workplace light-bg" style={{
+        justifyContent: 'center',
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column'
+      }}>
+
+        <Auth/>
+
+      </div>
+
+
+      <div className="App-workplace light-bg" style={{
+        justifyContent: 'center',
+        display: 'flex',
+        alignItems: 'center',
+        flexDirection: 'column'
+      }}>
+
+        <UsersComp/>
+
+      </div>
+
+      <div className="App-workplace light-bg" style={{
+        justifyContent: 'center',
+        display: 'flex',
+        alignItems: 'center'
+      }}>
+        <CounterWrapper>
+          <OutputCounter/>
+          <Counter/>
+        </CounterWrapper>
+>>>>>>> a5bede62456b4e0efdfbcc7ed65ebbaeccdb3d82
       </div>
 
       <div className="App-workplace light-bg" style={{
@@ -83,7 +126,7 @@ function App() {
         <div className="HTML-flipBook__overplay">
           {/*<div className="HTML-flipBook p-50-10 d-flex-center d-flex-dir-column">*/}
 
-            <FlipBookComponent/>
+            {/*<FlipBookComponent/>*/}
 
           {/*</div>*/}
         </div>
@@ -136,7 +179,6 @@ function App() {
         {/*<VimeoVideo/>*/}
       </div>
 
-      <Counter/>
 
     </div>
   );
